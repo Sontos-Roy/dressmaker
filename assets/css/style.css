@@ -228,6 +228,9 @@ a{
 .text-black2{
     color: #504f4f;
 }
+.text-white2{
+    color: #fff;
+}
 .bg-orange{
     background: var(--orange) !important;
 }
