@@ -1,0 +1,63 @@
+* { font-family: 'Roboto', sans-serif;}
+/** Form Element Formatting **/
+.form-group {  margin-bottom: 10px; display: block; position: relative;width:100%;}
+
+.form-control, .form-control:focus { outline: none; box-shadow: none; border-radius: 0; font-size: 16px;text-transform: uppercase;color: #000000; background: white; }
+.form-control-placeholder {position: absolute;left:0px;top: 22px;padding: 2px 0 0 0px;transition: all 200ms;color: #333;width: 95%;font-size: 14px; text-transform: uppercase;}
+.form-control:focus + .form-control-placeholder, .form-control:valid + .form-control-placeholder, .form-control:focus + .form-control-placeholder, .form-control:focus + label.error + .form-control-placeholder, .form-control:valid + label.error + .form-control-placeholder { transform: translate3d(0, -120%, 0); font-size: 12px!important; }
+.form-control:focus{ -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
+
+/*Datepicker css starts */
+#custom-dp-wrapper {border:solid 1px #d8d8d8; margin-top: 1px;  background: #fff; border-radius: 0; padding:10px 15px; position: relative; box-shadow: 0 0 10px #f1f1f1; -moz-box-shadow: 0 0 10px #f1f1f1; -webkit-box-shadow: 0 0 10px #f1f1f1; }
+#custom-dp-wrapper select , #custom-dp-wrapper select:hover , #custom-dp-wrapper select:focus { border:none !important; outline: none !important;  -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ''; background: none; background: url(../image/datepicker.png) no-repeat 81px -76px ;}
+#custom-dp-wrapper select {background: url(../image/date-select-arrow.png) 50px 8px no-repeat !important; }
+#custom-dp-wrapper select:hover , #custom-dp-wrapper select:focus { background-position:50px -138px !important;}
+#custom-dp-wrapper.month-view { width: 335px; }
+#custom-dp-wrapper.quarter-view { width: 948px; }
+#custom-dp-wrapper thead tr td {font-size: 12px;font-weight: normal;line-height: 22px;padding: 6px 0;border: solid 1px transparent !important;border-radius: 50%;height: 20px;width: 33px;text-align:center;vertical-align: middle;background: none !important;color: #000 !important;text-transform: uppercase;}
+#custom-dp-wrapper td {text-align: center;}
+#custom-dp-wrapper td a { font-size: 12px; font-weight: normal !important; line-height: 22px; padding: 6px 0; border: solid 1px transparent !important; border-radius: 50%; height: 33px; width: 33px; text-align: center; vertical-align: middle; background: none !important; color: #333 !important; text-decoration:none;display: block;}
+#custom-dp-wrapper td.active a{color: #e17009 !important; font-weight:bold !important}
+#custom-dp-wrapper tr td.today a{ background: #e2e2e2 !important; color:#333 !important ;}
+#custom-dp-wrapper tr td a:hover  { background: #00668C !important; border: solid 1px #00668C !important; color: #FFF !important;} 
+#custom-dp-wrapper tr td.non-day a  { cursor: default;pointer-events: none;} 
+#custom-dp-wrapper .custom-dp-header {border-radius: 0;padding: 0 0;background: transparent;    border-bottom: 1px solid #d8d8d8;min-height: 34px;}
+#custom-dp-wrapper .custom-dp-header #custom-dp-wrapper-title{border: none;background: #f1f1f1;margin:0 !important;}
+#custom-dp-wrapper .prev-month,#custom-dp-wrapper .next-month , #custom-dp-wrapper .prev-year , #custom-dp-wrapper .next-year,  #custom-dp-wrapper .next-quarter , #custom-dp-wrapper .prev-quarter ,  #custom-dp-wrapper .prev-yr-quarter {position: absolute;left:0px;top: 0px;width: 20px;height: 20px;font-size: 14px;color: #000 !important;background: url('../image/datepicker.png') no-repeat -31px -30px;cursor: pointer;text-indent: -99999px;/* border: solid 1px red; */border-radius: 50%;}
+.datepicker-month-dropdown, .datepicker-year-dropdown,.datepicker-quarter-dropdown { position: absolute; left:0px; top: 0px;  border:solid 1px #333; font-size: 14px; color: #000 !important; background:url('../image/datepicker.png') no-repeat 0 0; cursor: pointer; }
+#custom-dp-wrapper .prev-month,#custom-dp-wrapper .prev-quarter {left:0px;background-position: 0px -39px;}
+#custom-dp-wrapper .prev-month:hover,#custom-dp-wrapper .prev-quarter, .prev-month:focus {background-position: -62px -39px;}
+#custom-dp-wrapper .next-month,#custom-dp-wrapper .next-quarter {left: 94px;background-position: 2px -76px;top: 0px;}
+#custom-dp-wrapper .next-month:hover,#custom-dp-wrapper .next-quarter, .next-month:focus { background-position:-59px -76px;}
+#custom-dp-wrapper .prev-year {left: 205px;background-position: 0px -40px;top: 0px;}
+#custom-dp-wrapper .prev-year:hover, .prev-year:focus {background-position: -62px -40px;}
+#custom-dp-wrapper .next-year {left: 300px;background-position: 2px -76px;top: 0px;}
+#custom-dp-wrapper .next-year:hover, .next-year:focus { background-position:-60px -76px;}
+#custom-dp-wrapper .datepicker-month-dropdown, #custom-dp-wrapper .datepicker-year-dropdown, #custom-dp-wrapper .datepicker-quarter-dropdown { position: absolute; left:0px; top: 0px;  border:solid 1px #333; color: #000 !important; background:url('../image/datepicker.png') no-repeat 0 0; cursor: pointer; margin: 0; }
+#custom-dp-wrapper .datepicker-year-dropdown {left: 230px;width: 65px !important;background: none;}
+#custom-dp-wrapper .datepicker-month-dropdown,#custom-dp-wrapper .datepicker-quarter-dropdown{left: 24px;width: 66px !important;background: none;}
+/*** Datepicker Monthly View Formatting Ends ***/
+#custom-dp-wrapper.quarter-view .month-dropdown-view,#custom-dp-wrapper.month-view .quarter-dropdown-view{display: none;}
+#custom-dp-wrapper .single-calender { display: inline-block;padding: 10px;min-width:18.5rem;}
+#custom-dp-wrapper .single-calender table { width: 100%;}
+/*** Datepicker Footer Links Months and Quarters Starts ***/
+#custom-dp-wrapper .newLinks { float: left; width: 100%; border-top: solid 1px #ccc; text-align: right; padding:13px 0 0 0;}
+#custom-dp-wrapper .newLinks a {float:right; display: inline-block; width: 24px; height: 24px; border: solid 1px #d1d1d1; color: #d1d1d1; border-radius: 50%; text-align: center; text-decoration: none; line-height: 24px; font-size: 12px; font-weight: bold;}
+.switch-view.quarter-view{margin-left:10px;}
+#custom-dp-wrapper .newLinks a:hover , #custom-dp-wrapper.quarter-view  .newLinks a#switch-quarter-view, #custom-dp-wrapper.month-view  .newLinks a#switch-month-view  { color:#00668C; border:solid 1px  #00668C;}
+#custom-dp-wrapper .month-dropdown-view,#custom-dp-wrapper .quarter-dropdown-view,#custom-dp-wrapper .year-dropdown-view { position: relative;}
+#custom-dp-wrapper .single-calender h4 { margin: 8px 0;border-bottom: 1px solid #c6c6c6;padding-bottom: 5px;}
+
+#custom-dp-wrapper .custom-datepicker-title {border:none; border-bottom: solid 1px #d8d8d8; background: #fff; margin: 0 !important; text-align: left;line-height: 1.8em; }
+#custom-dp-wrapper .custom-datepicker-month{width:100% !important;height: 100%; border: none;font-size: 16px;font-weight: normal;line-height: 18px;position: static;padding: 0 0 0 0;color: #666 !important;}
+#custom-dp-wrapper.month-view .custom-datepicker-title{display: none;}
+#custom-dp-wrapper table{font-size: .9em;border-collapse: collapse;}
+#custom-dp-wrapper .disabled { cursor: default !important; pointer-events: none;}
+#custom-dp-wrapper td.disabled { opacity: .35; background-image: none;}
+.form-control.datepicker{
+transition: none;}
+.datepicker:hover{ background-position: right -999px;}
+.datepicker[disabled],.datepicker.disabled{ background-position: right -1143px;}
+
+
+/*** Datepicker Footer Links Months and Quarters Ends ***/

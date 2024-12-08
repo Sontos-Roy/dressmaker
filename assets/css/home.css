@@ -1,0 +1,92 @@
+.slider-section .slider4 .donation_slider_item .image{
+    text-align: center;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slider-section .slider4 .donation_slider_item .image img{
+    width: 100%;
+}
+.slider-section .slider4 .donation_slider_item .image .overlay{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider-section .slider4 .donation_slider_item .image .overlay{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.slider-section .slider4 .donation_slider_item:hover .image .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(201, 4, 4, 0.541);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.slider-section .slider4 .donation_slider_item .content h6{
+    color: #08598f;
+}
+.slider-section .slider4 .donation_slider_item:hover .content h6{
+    color: #8f0808;
+}
+
+
+/* banner section  */
+.banner-section .banner-item{
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+.banner-section .banner-item button{
+    padding: 15px 25px;
+    font-weight: bold;
+}
+.banner-section .banner-item button.btn-light{
+    color: #08598f;
+    border: #08598f 1px solid;
+}
+.banner-section .banner-item-lg{
+    text-align: start;
+    padding: 100px;
+}
+.banner-section .banner-item-lg h1{
+    font-size: 80px;
+}
+@media (max-width: 575px) {
+    .banner-section .banner-item-lg h1{
+        font-size: 50px;
+    }
+}
+
+
+
+.mobile-section{
+    background: #08598f;
+    padding: 15px;
+}
+.mobile-section ul li a{
+    font-size: 22px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+.mobile-section ul li a i{
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
