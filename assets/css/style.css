@@ -202,9 +202,14 @@ a{
 }
 .primary-bg{
     background: var(--primary);
+    transition: 0.2s;
 }
 .primary-bg:hover, .primary-bg:active, .primary-bg:focus-visible{
     background: var(--primary);
+}
+.primary-bg-hover:hover{
+    background: var(--primary);
+    color: white;
 }
 .primary{
     color: var(--primary);

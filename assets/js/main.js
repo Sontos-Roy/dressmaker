@@ -18,6 +18,11 @@
       $('.sidebar').addClass('active');
       $('.side_overlay').addClass('active');
     })
+    $('.lg_toggle_filter_main').click(function(e){
+      e.preventDefault();
+      $('.filter_sidebar').addClass('active');
+      $('.side_overlay').addClass('active');
+    })
     $('.card_sidebar_toggler').click(function(e){
       e.preventDefault();
       $('.card_sidebar').addClass('active');
@@ -28,7 +33,12 @@
       $('.sidebar').removeClass('active');
       $('.card_sidebar').removeClass('active');
       $('.side_overlay').removeClass('active');
+      $('.filter_sidebar').removeClass('active');
     })
+    $('.lg_toggle_filter').click(function(e){
+      e.preventDefault();
+      $('.top_filter_box_sort').slideToggle()
+    });
     $('.sidebar_link').on('click', function(e) {
       e.preventDefault(); // Prevent default anchor behavior
   

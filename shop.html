@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dressmaker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/silck/slick.css" />
+    <link rel="stylesheet" href="assets/silck/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/shop.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <header class="header">
+            <div class="top_header">
+                <nav class="row justify-content-between h-100 align-items-center col-lg-11 col-12 px-0 m-auto">
+                    <div class="col-lg-3 col-3 d-lg-none d-block">
+                        <button class="btn rounded-0 border-0 shadow-none sidebar_toggler">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <a href="" class="navbar-brand">
+                            <img src="assets/image/logo/logo.png" alt="" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="col-lg-4 d-lg-block d-none">
+                        <form action="">
+                            <div class="input-group border">
+                                <button class="input-group-text btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <input type="search"
+                                    class="form-control rounded-0 border-0 shadow-none form-control-placeholder"
+                                    placeholder="Search for products...." />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-3 text-end d-lg-none d-block">
+                        <a href="" title="Shopping Cart" class="text-dark card_sidebar_toggler">
+                            <span class="px-2 position-relative">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge bg-primary rounded-circle cart_badge">0</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 d-lg-block d-none">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="dropdown p-2 nav-link cart_button">
+                                <a href="" title="Shopping Cart" class="text-dark">
+                                    <span class="px-2 position-relative">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="badge bg-primary rounded-circle cart_badge">0</span>
+                                    </span>
+                                    <span> 3020 tk </span>
+                                </a>
+                                <div class="dropdown-content cart_dropdown">
+                                    <div class="carts">
+                                        <div class="cart_item">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/image/image1.jpg" alt="" width="70" />
+                                                <div class="ps-2">
+                                                    <a href="" class="fw-bold text-info">
+                                                        Klair's midnight blue cream 60ml/ Some by mi
+                                                        propolis b5 glow barrier calming mask 100g
+                                                    </a>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span>1 x
+                                                            <span class="text-info fw-bold">3,099.00৳</span></span>
+                                                        <button class="btn border rounded-circle shadow-none">
+                                                            <i class="fas fa-times"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 text-center border my-3">
+                                        <div class="mb-0 fw-bold font-20">Subtotal: 3040 tk</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-secondary rounded-0">
+                                            View Cart
+                                        </button>
+                                        <button class="btn btn-secondary rounded-0">
+                                            Checkout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 nav-link border-start">
+                                <a href="#" title="Shopping Cart" class="text-dark signinbar_toggler">
+                                    <span class="px-2">
+                                        <i class="fas fa-user-alt"></i>
+                                    </span>
+                                    <span> Login / Register </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="border-bottom main_nav d-none d-lg-block">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <div class="container">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 main_menu">
+                            <li class="nav-item has_menu active">
+                                <a class="nav-link py-2" href="#">Screen Care <i class="fas fa-angle-down"></i></a>
+                                <div class="dropdown_menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Moisturizer</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Serum</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Toner</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Soothing Gel</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Essence</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Cleanser</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Moisturizer</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Serum</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Toner</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Soothing Gel</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Essence</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Cleanser</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Moisturizer</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Serum</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Toner</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Soothing Gel</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Essence</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Cleanser</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Moisturizer</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Serum</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Toner</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Soothing Gel</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Essence</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Cleanser</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Moisturizer</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Serum</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Toner</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Soothing Gel</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Essence</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Cleanser</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item has_menu">
+                                <a class="nav-link py-2" href="#">Brand <i class="fas fa-angle-down"></i></a>
+                                <div class="dropdown_menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-2 mb-4">
+                                                <h5 class="fw-bold font-16">By Product Type</h5>
+                                                <ul class="list-unstyled p-0">
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">3w Clinic</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Acwell</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Aromatica</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Axis Y</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Anua</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Beaute</a>
+                                                    </li>
+                                                    <li class="nav-item py-1">
+                                                        <a href="" class="text-black2 fw-semibold">Banila Co</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2" href="#">Make Up </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2" href="#">Beauty Tools</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2" href="#">Fragrance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2" href="#">Food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2" href="#">SALE!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="border-bottom main_nav d-block d-lg-none px-3 p-1">
+                <form action="">
+                    <div class="input-group border">
+                        <button class="input-group-text btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <input type="search"
+                            class="form-control rounded-0 border-0 shadow-none form-control-placeholder"
+                            placeholder="Search for products...." />
+                    </div>
+                </form>
+            </div>
+            <div class="sidebar">
+                <div class="card p-0 border-0">
+                    <div class="card-header bg-white px-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="fw-bold"></h5>
+                            <button class="btn shadow-none sidebar_dismiss">
+                                <i class="fas fa-times"></i> close
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="input-group border">
+                            <button class="input-group-text btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <input type="search"
+                                class="form-control rounded-0 border-0 shadow-none form-control-placeholder"
+                                placeholder="Search for products...." />
+                        </div>
+                        <div class="sidebar_menu">
+                            <ul class="sidebar_items">
+                                <li class="sidebar_item">
+                                    <a href="" class="sidebar_link"><span>Screen Care</span>
+                                        <span class="toggler"><i class="fas fa-angle-right"></i></span></a>
+                                    <ul class="lavel1 sidebar_items" style="display: none">
+                                        <li class="sidebar_item">
+                                            <a href="" class="sidebar_link"><span>Get Product Type</span>
+                                                <span class="toggler"><i class="fas fa-angle-right"></i></span></a>
+                                            <ul class="sidebar_items lavel2" style="display: none">
+                                                <li class="sidebar_item">
+                                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                                </li>
+                                                <li class="sidebar_item">
+                                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar_item">
+                                            <a href="" class="sidebar_link"><span>Get Product Type</span>
+                                                <span class="toggler"><i class="fas fa-angle-right"></i></span></a>
+                                            <ul class="sidebar_items lavel2" style="display: none">
+                                                <li class="sidebar_item">
+                                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                                </li>
+                                                <li class="sidebar_item">
+                                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar_item">
+                                            <a href="" class="sidebar_link"><span>Get Product Type</span>
+                                                <span class="toggler"><i class="fas fa-angle-right"></i></span></a>
+                                            <ul class="sidebar_items lavel2" style="display: none">
+                                                <li class="sidebar_item">
+                                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                                </li>
+                                                <li class="sidebar_item">
+                                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar_item">
+                                    <a href="" class="sidebar_link"><span>Screen Care</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="signinbar">
+                <div class="card border-0">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="fw-bold">Sign in</h5>
+                            <button class="btn shadow-none sidebar_dismiss">
+                                <i class="fas fa-times"></i> close
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-group mb-3">
+                                <label>Phone <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control border-muted rounded-0 shadow-none" />
+                            </div>
+                            <div class="form-group mb-3">
+                                <button class="btn btn-light bg-muted text-cap rounded-0">
+                                    Sign in with OTP
+                                </button>
+                            </div>
+                            <div class="form-group mb-3">
+                                <button class="btn btn-light bg-muted text-cap rounded-0">
+                                    Sign in with Email Address
+                                </button>
+                            </div>
+                        </form>
+                        <div class="text-center py-3">
+                            <h1 class="fa-regular fa-user display-1"></h1>
+                            <p class="my-2 fw-bold text-dark">No account yet?</p>
+                            <a href="" class="fw-bold text-dark text-cap border-bottom border-2">Create an Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_sidebar">
+                <div class="card rounded-0 border-0 position-static" id="cart_section">
+                    <div class="card-header border-0 d-flex justify-content-between align-items-center">
+                        <div class="fw-bold">Shopping Bag (0)</div>
+                        <button class="btn btn-lg sidebar_dismiss">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="cart_item">
+                            <div class="d-flex gap-2">
+                                <img src="https://pos.sunnahbd.com/uploads/img/1733243822_835.jpg" alt="" width="60" />
+                                <div class="content">
+                                    <div class="fw-bold font-12">BurlyWood Panjabi</div>
+                                    <div class="text-muted font-12">
+                                        Code: SPP 835 <br />
+                                        BDT: BDT 3,480 <br />
+                                        Size: XL/17.5
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-1">
+                                <div class="d-flex update_link"
+                                    data-href="https://sunnahbd.com/carts/466/edit?segment=tttt">
+                                    <div class="btn btn-light rounded-0 decrease" data-type="minus">
+                                        <i class="fas fa-minus"></i>
+                                    </div>
+                                    <input type="text" class="form-control shadow-none rounded-0 quantity-input"
+                                        style="width: 50px" value="1" />
+                                    <div class="btn btn-light rounded-0 increase" data-type="plus">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="text-muted font-13">BDT BDT 3,480</div>
+
+                                <form id="delete_form" method="post" action="https://sunnahbd.com/carts/466">
+                                    <button class="font-13 btn text-danger border-0 shadow-none">
+                                        x Remove
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent cart_sidebar_footer border-0">
+                        <div class="bg-light text-center font-13 mb-2">
+                            <b>Subtotal: BDT 0 </b>
+                        </div>
+                        <div class="d-flex">
+                            <div class="border-end w-50">
+                                <a href="https://sunnahbd.com/carts"
+                                    class="btn btn-outline-dark py-1 w-100 border-0 font-13 rounded-0">View Bag</a>
+                            </div>
+
+                            <div class="w-50">
+                                <a href="https://sunnahbd.com/checkouts"
+                                    class="btn btn-outline-dark py-1 w-100 border-0 font-13 rounded-0">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="side_overlay"></div>
+        </header>
+        <main>
+            <section class="section my-lg-5 my-3">
+                <div class="container">
+                    <div class="filter_box">
+                        <div class="filter_sidebar">
+                            <div class="text-end d-lg-none">
+                                <button class="btn border-0 shadow-none sidebar_dismiss"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light fw-semibold p-3 text-uppercase">Skin Care</button>
+                                <button class="btn btn-light fw-semibold p-3 text-uppercase">Skin Care</button>
+                                <button class="btn btn-light fw-semibold p-3 text-uppercase">Skin Care</button>
+                                <button class="btn btn-light fw-semibold p-3 text-uppercase">Skin Care</button>
+                            </div>
+                            <hr>
+                            <h5 class="fw-bold mb-3 font-18">Stock status</h5>
+                            <div class="d-flex flex-column">
+                                <label class="d-flex gap-3 mb-2">
+                                    <input type="checkbox" class="form-check rounded-0 border-2"> On Sale
+                                </label>
+                                <label class="d-flex gap-3 mb-2">
+                                    <input type="checkbox" class="form-check rounded-0 border-2"> In Stock
+                                </label>
+                            </div>
+                            <hr>
+                            <h5 class="fw-bold mb-3 font-18">Filter by price</h5>
+                            
+                            <div class="price-range-slider">
+                                <div id="slider-range" class="range-bar"></div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="range-value">
+                                        <input type="text" id="amount" readonly>
+                                        <input type="hidden" id="max">
+                                        <input type="hidden" id="min">
+                                      </p>
+                                      <button class="btn btn-light px-3 py-1">Apply</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5 class="fw-bold mb-3 font-18">By Product Type</h5>
+                            <ul class="list-unstyled types">
+                                <li class="d-flex justify-content-between">
+                                    <span>Eye Care</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Eye Care</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Eye Care</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Eye Care</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <h5 class="fw-bold mb-3 font-18">By SKIN TYPE</h5>
+                            <ul class="list-unstyled types">
+                                <li class="d-flex justify-content-between">
+                                    <span>Combination</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Combination</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Combination</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Combination</span> <span class="border px-2 badge rounded-5">20</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content_box flex-fill">
+                            <div class="filter_topbar d-flex justify-content-between mb-3 align-items-center flex-wrap">
+                                <div>
+                                    <nav class="breadcrumb align-items-center mb-0 d-none d-lg-flex">
+                                        <a class="breadcrumb-item" href="#">Main</a>
+                                        <a class="breadcrumb-item" href="#">Sub</a>
+                                        <span class="breadcrumb-item active" aria-current="page">Active</span>
+                                    </nav>
+                                    <a href="#" class="toggle_filter lg_toggle_filter_main d-lg-none d-flex text-muted align-items-center ms-3">
+                                        <i class="fas fa-bars"></i>
+                                        <span class="ps-1">Sidbar Filter</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center flex-fill justify-content-end">
+                                    <div class="paginate d-lg-flex d-none">
+                                        <span class="breadcrum-item active fw-semibold">Show: </span>
+                                        <a class="breadcrumb-item text-muted px-1" href="#">9</a>
+                                        <a class="breadcrumb-item text-muted px-1" href="#">12</a>
+                                        <a class="breadcrumb-item text-muted px-1" href="#">18</a>
+                                    </div>
+                                    <div class="grid_items gap-2 ms-3 d-lg-flex d-none">
+                                        <div class="grid border px-2 nav-link">
+                                            <svg width="25" height="30" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="5" width="10" height="20" fill="black"></rect>
+                                                <rect x="15" y="5" width="10" height="20" fill="black"></rect>
+                                              </svg>
+                                        </div>
+                                        <div class="grid border px-2 nav-link">
+                                            <svg width="40" height="30" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="5" width="10" height="20" fill="black"></rect>
+                                                <rect x="15" y="5" width="10" height="20" fill="black"></rect>
+                                                <rect x="30" y="5" width="10" height="20" fill="black"></rect>
+                                              </svg>
+                                        </div>
+                                        <div class="grid border px-2 nav-link">
+                                            <svg width="55" height="30" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="5" width="10" height="20" fill="black"></rect>
+                                                <rect x="15" y="5" width="10" height="20" fill="black"></rect>
+                                                <rect x="30" y="5" width="10" height="20" fill="black"></rect>
+                                                <rect x="45" y="5" width="10" height="20" fill="black"></rect>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="toggle_filter lg_toggle_filter d-flex text-muted align-items-center ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path d="M324.4 64C339.6 64 352 76.37 352 91.63C352 98.32 349.6 104.8 345.2 109.8L240 230V423.6C240 437.1 229.1 448 215.6 448C210.3 448 205.2 446.3 200.9 443.1L124.7 385.6C116.7 379.5 112 370.1 112 360V230L6.836 109.8C2.429 104.8 0 98.32 0 91.63C0 76.37 12.37 64 27.63 64H324.4zM144 224V360L208 408.3V223.1C208 220.1 209.4 216.4 211.1 213.5L314.7 95.1H37.26L140 213.5C142.6 216.4 143.1 220.1 143.1 223.1L144 224zM496 400C504.8 400 512 407.2 512 416C512 424.8 504.8 432 496 432H336C327.2 432 320 424.8 320 416C320 407.2 327.2 400 336 400H496zM320 256C320 247.2 327.2 240 336 240H496C504.8 240 512 247.2 512 256C512 264.8 504.8 272 496 272H336C327.2 272 320 264.8 320 256zM496 80C504.8 80 512 87.16 512 96C512 104.8 504.8 112 496 112H400C391.2 112 384 104.8 384 96C384 87.16 391.2 80 400 80H496z"></path></svg>
+                                        <span class="">Filter</span>
+                                    </a>
+                                </div>
+                                <div class="col-12 border-top mt-1">
+                                    <div class="top_filter_box_sort" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 p-3">
+                                                <h5 class="fw-bold mb-3 font-18 m-0 py-3">Stock status</h5>
+                                                <ul class="types list-unstyled">
+                                                    <li class="nav-item"><a href="" class="nav-link">Popularity</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">Average rating</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">Newness</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">Price: low to high</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">Price: high to low</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 p-3">
+                                                <h5 class="fw-bold mb-3 font-18 m-0 py-3">Price filter</h5>
+                                                <ul class="types list-unstyled">
+                                                    <li class="nav-item"><a href="" class="nav-link">All</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">0.00৳  - 690.00৳ </a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">690.00৳  - 1,380.00৳</a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">1,380.00৳  - 2,070.00৳ </a></li>
+                                                    <li class="nav-item"><a href="" class="nav-link">2,070.00৳  +</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row products">
+                                    <div class="col-lg-3 col-md-4 col-6 product">
+                                        <div class="card p-2 border-0">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="https://koreanmartbd.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-09-at-8.52.38-PM.jpeg" alt="" class="img-fluid rounded-3">
+                                                </a>
+                                                <div class="fixed_content position-absolute top-0 start-0 p-3">
+                                                    <span class="primary-bg text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">-5%</span>
+                                                    <span class="bg-danger text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">HOT</span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="p_name">
+                                                    Klair's midnight blue cream 60ml/Thank you farmer Luo eye cream 30ml
+                                                </a>
+                                                <div>
+                                                    <small><del>1,700.00৳</del></small> <span class="primary fw-bold">1,700.00৳</span>
+                                                </div>
+                                                <button class="btn product_btn w-100 fw-bold">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 product">
+                                        <div class="card p-2 border-0">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="https://koreanmartbd.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-09-at-8.52.38-PM.jpeg" alt="" class="img-fluid rounded-3">
+                                                </a>
+                                                <div class="fixed_content position-absolute top-0 start-0 p-3">
+                                                    <span class="primary-bg text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">-5%</span>
+                                                    <span class="bg-danger text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">HOT</span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="p_name">
+                                                    Klair's midnight blue cream 60ml/Thank you farmer Luo eye cream 30ml
+                                                </a>
+                                                <div>
+                                                    <small><del>1,700.00৳</del></small> <span class="primary fw-bold">1,700.00৳</span>
+                                                </div>
+                                                <button class="btn product_btn w-100 fw-bold">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 product">
+                                        <div class="card p-2 border-0">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="https://koreanmartbd.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-09-at-8.52.38-PM.jpeg" alt="" class="img-fluid rounded-3">
+                                                </a>
+                                                <div class="fixed_content position-absolute top-0 start-0 p-3">
+                                                    <span class="primary-bg text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">-5%</span>
+                                                    <span class="bg-danger text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">HOT</span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="p_name">
+                                                    Klair's midnight blue cream 60ml/Thank you farmer Luo eye cream 30ml
+                                                </a>
+                                                <div>
+                                                    <small><del>1,700.00৳</del></small> <span class="primary fw-bold">1,700.00৳</span>
+                                                </div>
+                                                <button class="btn product_btn w-100 fw-bold">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 product">
+                                        <div class="card p-2 border-0">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="https://koreanmartbd.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-09-at-8.52.38-PM.jpeg" alt="" class="img-fluid rounded-3">
+                                                </a>
+                                                <div class="fixed_content position-absolute top-0 start-0 p-3">
+                                                    <span class="primary-bg text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">-5%</span>
+                                                    <span class="bg-danger text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">HOT</span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="p_name">
+                                                    Klair's midnight blue cream 60ml/Thank you farmer Luo eye cream 30ml
+                                                </a>
+                                                <div>
+                                                    <small><del>1,700.00৳</del></small> <span class="primary fw-bold">1,700.00৳</span>
+                                                </div>
+                                                <button class="btn product_btn w-100 fw-bold">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6 product">
+                                        <div class="card p-2 border-0">
+                                            <div class="image">
+                                                <a href="">
+                                                    <img src="https://koreanmartbd.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-09-at-8.52.38-PM.jpeg" alt="" class="img-fluid rounded-3">
+                                                </a>
+                                                <div class="fixed_content position-absolute top-0 start-0 p-3">
+                                                    <span class="primary-bg text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">-5%</span>
+                                                    <span class="bg-danger text-light rounded-5 p-1 font-14 px-3 mb-2 d-block">HOT</span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <a href="" class="p_name">
+                                                    Klair's midnight blue cream 60ml/Thank you farmer Luo eye cream 30ml
+                                                </a>
+                                                <div>
+                                                    <small><del>1,700.00৳</del></small> <span class="primary fw-bold">1,700.00৳</span>
+                                                </div>
+                                                <button class="btn product_btn w-100 fw-bold">Add To Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 130,
+            max: 500,
+            values: [ 130, 250 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "৳" + ui.values[ 0 ] + " - ৳" + ui.values[ 1 ] );
+                $('#max').val(ui.values[ 0 ]);
+                $('#min').val(ui.values[ 1 ]);
+            }
+            
+            });
+            $('#max').val($( "#slider-range" ).slider( "values", 0 ));
+            $('#min').val($( "#slider-range" ).slider( "values", 1 ));
+            $( "#amount" ).val( " ৳ " + $( "#slider-range" ).slider( "values", 0 ) +
+            " -  ৳ " + $( "#slider-range" ).slider( "values", 1 ) );
+        });
+    </script>
+</body>
+
+</html>

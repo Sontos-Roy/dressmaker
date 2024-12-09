@@ -1,0 +1,89 @@
+.filter_box{
+    display: flex;
+    gap: 10px;
+}
+.filter_sidebar{
+    width: 320px;
+    min-width: 320px;
+    background: white;
+}
+@media(max-width: 1200px){
+    .filter_sidebar{
+        position: fixed;
+        top: 0;
+        left: -320px;
+        z-index: 99;
+        padding: 10px;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    .filter_sidebar.active{
+        left: 0;
+    }
+}
+.form-check:hover{
+    border: 2px solid red;
+}
+.price-range-slider {
+    width: 100%;
+    float: left;
+    padding: 10px 0px;
+  }
+  .price-range-slider .range-value {
+    margin: 0;
+  }
+  .price-range-slider .range-value input {
+    width: 100%;
+    background: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    margin: 20px 0 20px 0;
+  }
+  .price-range-slider .range-bar {
+    border: none;
+    background: #000;
+    height: 3px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .price-range-slider .range-bar .ui-slider-range {
+    background: var(--primary);
+  }
+  .price-range-slider .range-bar .ui-slider-handle {
+    border: none;
+    border-radius: 0px;
+    background: #fff;
+    border: 2px solid var(--primary);
+    height: 17px;
+    width: 5px;
+    margin-left: auto;
+    top: -0.52em;
+    cursor: pointer;
+  }
+  .price-range-slider .range-bar .ui-slider-handle + span {
+    background: var(--primary);
+  }
+  .types li{
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  
+  .types li:hover{
+    color: #000;
+  }
+  .types li .badge{
+    color: #000;
+  }
+  .types li:hover .badge{
+    background: var(--primary);
+    color: white;
+  }
+  .breadcrumb a{
+    color: #6b6a6a;
+  }
+  .breadcrumb span.active{
+    color: #0a0a0a;
+  }
