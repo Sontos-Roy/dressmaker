@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/product.css" />
+    <link rel="stylesheet" href="assets/css/cart.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
@@ -628,389 +629,166 @@
             <div class="side_overlay"></div>
         </header>
         <main>
-            <section class="section my-lg-5 my-3">
-                <div class="container">
+            <div class="container">
+                <h3 class="my-3 fw-bold">Checkout</h3>
+                <form action="">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12 mb-3">
-                            <div class="image position-relative">
-                                <img src="https://koreanmartbd.com/wp-content/uploads/2024/06/ACWELL-Super-Fit-Clear-Mask.jpg"
-                                    alt="" class="img-fluid">
-                                <div class="fixed_content position-absolute end-0 top-0 p-3 d-flex flex-column">
-                                    <span class="badge primary-bg px-2 mb-3 w-auto">-7%</span>
-                                    <span class="badge bg-danger px-2 mb-3 w-auto">SOLD OUT</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12 mb-3">
-                            <h3>ACWELL Super Fit Clear Mask</h3>
-                            <div>
-                                <h3 class="text-muted mb-0 fw-bold mt-3"><del>215.00৳</del> <span
-                                        class="primary">200.00৳</span> <span class="ms-3 font-15 text-danger">Out of
-                                        stock</span></h3>
-                            </div>
-                            <div class="button_box">
-                                <div class="quantity_box">
-                                    <button class="btn border-0 shadow-none text-danger "><i
-                                            class="fas fa-minus"></i></button>
-                                    <input type="text"
-                                        class="form-control shadow-none border-1 border-bottom-0 border-top-0 rounded-0"
-                                        value="0">
-                                    <button class="btn border-0 shadow-none text-danger "><i
-                                            class="fas fa-plus"></i></button>
-                                </div>
-                                <button class="btn product_btn w-100 fw-bold add_to_cart">Add To Cart</button>
-                                <button class="btn product_btn w-100 fw-bold buy_now">Add To Cart</button>
-                            </div>
-                            <hr>
-                            <div class="card p-3">
+                        <div class="col-lg-7 col-12">
+                            <div class="mb-3 mt-3">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <path
-                                                    d="M4 21H3C3 21.5523 3.44772 22 4 22V21ZM20 21V22C20.5523 22 21 21.5523 21 21H20ZM4 22H20V20H4V22ZM21 21V13H19V21H21ZM3 13V21H5V13H3Z"
-                                                    fill="#1C61E7"></path>
-                                                <path
-                                                    d="M7.66671 10.666C7.66671 10.1137 7.21899 9.66602 6.66671 9.66602C6.11442 9.66602 5.66671 10.1137 5.66671 10.666H7.66671ZM13 10.666C13 10.1137 12.5523 9.66602 12 9.66602C11.4478 9.66602 11 10.1137 11 10.666H13ZM18.3334 10.666C18.3334 10.1137 17.8857 9.66602 17.3334 9.66602C16.7811 9.66602 16.3334 10.1137 16.3334 10.666H18.3334ZM22.6667 10.666H23.6667C23.6667 10.5542 23.6479 10.4431 23.6112 10.3375L22.6667 10.666ZM1.33337 10.666L0.388884 10.3375C0.352138 10.4431 0.333374 10.5542 0.333374 10.666H1.33337ZM4 3V2C3.57435 2 3.19535 2.26944 3.05551 2.67146L4 3ZM20 3L20.9445 2.67145C20.8046 2.26943 20.4256 2 20 2V3ZM5.66671 10.666C5.66671 11.5865 4.92052 12.3327 4.00004 12.3327V14.3327C6.02508 14.3327 7.66671 12.6911 7.66671 10.666H5.66671ZM5.66671 10.666C5.66671 12.6911 7.30833 14.3327 9.33337 14.3327V12.3327C8.4129 12.3327 7.66671 11.5865 7.66671 10.666H5.66671ZM9.33337 14.3327C11.3584 14.3327 13 12.6911 13 10.666H11C11 11.5865 10.2538 12.3327 9.33337 12.3327V14.3327ZM14.6667 12.3327C13.7462 12.3327 13 11.5865 13 10.666H11C11 12.6911 12.6417 14.3327 14.6667 14.3327V12.3327ZM16.3334 10.666C16.3334 11.5865 15.5872 12.3327 14.6667 12.3327V14.3327C16.6918 14.3327 18.3334 12.6911 18.3334 10.666H16.3334ZM20 12.3327C19.0796 12.3327 18.3334 11.5865 18.3334 10.666H16.3334C16.3334 12.6911 17.975 14.3327 20 14.3327V12.3327ZM21.6667 10.666C21.6667 11.5865 20.9205 12.3327 20 12.3327V14.3327C22.0251 14.3327 23.6667 12.6911 23.6667 10.666H21.6667ZM4.00004 12.3327C3.07957 12.3327 2.33337 11.5865 2.33337 10.666H0.333374C0.333374 12.6911 1.975 14.3327 4.00004 14.3327V12.3327ZM4 4H20V2H4V4ZM2.27786 10.9946L4.94449 3.32854L3.05551 2.67146L0.388884 10.3375L2.27786 10.9946ZM19.0555 3.32855L21.7222 10.9946L23.6112 10.3375L20.9445 2.67145L19.0555 3.32855Z"
-                                                    fill="#1C61E7"></path>
-                                            </svg>
-                                            <div class="fw-bold ms-2 flex-fill">Pick up from the Koreanmart <br> Store
+                                    <h5>Contact</h5>
+                                    <a href="" class="text-decoration-underline text-dark">Login</a>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control shadow-none" placeholder="Email">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="d-flex gap-3">
+                                        <input type="checkbox" class="form-check"> Email me with news and offers
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <h4 class="fw-bold mb-0">
+                                    Delivery
+                                </h4>
+                                <div class="mb-3">
+                                    <div class="form-floating mt-3">
+                                        <select name="" id="" class="form-select shadow-none">
+                                            <option value="Us">United State</option>
+                                        </select>
+                                        <label for="formId1">Country/Region</label>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none" placeholder="First Name">
+                                        </div>
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none" placeholder="Last Name">
+                                        </div>
+                                        <div class="col-lg-12 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none" placeholder="Address">
+                                        </div>
+                                        <div class="col-lg-12 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none"
+                                                placeholder="Appartment, suite, etc (Optional)">
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none" placeholder="City">
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <select name="" id="" class="form-select shadow-none">
+                                                <option value="">Dhaka</option>
+                                                <option value="">Rangpur</option>
+                                                <option value="">Sylet</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none" placeholder="Zip Code">
+                                        </div>
+                                        <div class="col-lg-12 col-12 mb-3">
+                                            <input type="text" class="form-control shadow-none" placeholder="Phone">
+                                        </div>
+    
+                                        <div class="col-lg-12 col-12 mb-3 ">
+                                            <b>Shipping method</b>
+                                            <div class="bg-muted p-3 mt-3">
+                                                Enter your shipping address to view available shipping methods.
                                             </div>
                                         </div>
-                                        <div class="mt-3">
-                                            To pick up today
+                                        <div class="col-lg-12 col-12 mb-3 ">
+                                            <h4 class="fw-bold">Payment</h4>
+                                            <div class=" p-3 mt-3">
+                                                All transactions are secure and encrypted.
+                                            </div>
+                                            <div class="p-2 border border-muted bg-muted">
+                                                Cradit Card
+                                            </div>
+                                            <div class="bg-muted p-3">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12 mb-3">
+                                                        <input type="text" placeholder="Card number"
+                                                            class="form-control p-2 mb-3 shadow-none">
+                                                    </div>
+                                                    <div class="col-lg-6 col-12 mb-3">
+                                                        <input type="text" placeholder="Expairation Date"
+                                                            class="form-control p-2 mb-3 shadow-none">
+                                                    </div>
+                                                    <div class="col-lg-6 col-12 mb-3">
+                                                        <input type="text" placeholder="Security Code"
+                                                            class="form-control p-2 mb-3 shadow-none">
+                                                    </div>
+                                                    <div class="col-lg-12 col-12 mb-3">
+                                                        <input type="text" placeholder="Name of card"
+                                                            class="form-control p-2 mb-3 shadow-none">
+                                                    </div>
+                                                    <div class="col-lg-12 col-12 mb-3">
+                                                        <label class="d-flex gap-2">
+                                                            <input type="checkbox" class="form-check"> Use shipping address
+                                                            as billing address
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button
+                                                            class="btn primary-bg text-light p-2 font-20 fw-bold col-12">Pay
+                                                            now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+    
                                     </div>
-                                    <span class="fw-bold">Free</span>
+    
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3">
-                                    <div>
-                                        <span>
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <path
-                                                    d="M15 7H19L20 11L23 12.1667V17H15M15 7V5C15 4.44772 14.5523 4 14 4H2C1.44772 4 1 4.44772 1 5V16C1 16.5523 1.44772 17 2 17H15M15 7V17"
-                                                    stroke="#1C61E7" stroke-width="2" stroke-linejoin="round"></path>
-                                                <rect x="3" y="15" width="5" height="5" rx="2.5" fill="#1C61E7"></rect>
-                                                <rect x="16" y="15" width="5" height="5" rx="2.5" fill="#1C61E7"></rect>
-                                            </svg>
-                                        </span>
-                                        <span class="fw-bold ms-2 flex-fill">Courier delivery</span>
-                                        <div class="mt-3">
-                                            Our courier will deliver to <br> the specified address
-                                        </div>
-                                    </div>
-                                    <span class="ms-2">2-3 Days</span>
-                                    <span class="fw-bold ms-2">60/120 TK</span>
-                                </div>
+    
                             </div>
-                            <div class="card p-3 mt-3">
-                                <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                        <div class="col-lg-5 col-12">
+                            <div class="order_summary_div bg-muted p-3 card">
+                                <div class="product_info d-flex align-items-center gap-3">
+                                    <div class="image position-relative p-3" style="width: 100px;"><img
+                                            src="https://koreanmartbd.com/wp-content/uploads/2022/03/KM-0007-AXIS-Y-Dark-Spot-Correcting-Glow-Serum.jpg" width="100%" alt=""> <span
+                                            class="badge primary-bg text-light position-absolute top-0 end-0">2</span></div>
                                     <div>
-                                        <div class="d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <rect width="24" height="24" fill="white"></rect>
-                                                <path
-                                                    d="M10.7071 11.2929C10.3166 10.9024 9.68342 10.9024 9.29289 11.2929C8.90237 11.6834 8.90237 12.3166 9.29289 12.7071L10.7071 11.2929ZM12 14L11.2929 14.7071C11.4979 14.9121 11.7817 15.018 12.0709 14.9975C12.3601 14.9769 12.6261 14.8319 12.8 14.6L12 14ZM15.8 10.6C16.1314 10.1582 16.0418 9.53137 15.6 9.2C15.1582 8.86863 14.5314 8.95817 14.2 9.4L15.8 10.6ZM11.7871 21.9419L11.4991 22.8995L11.7871 21.9419ZM12.2129 21.9419L11.925 20.9843L12.2129 21.9419ZM3.99571 5.92448L3.85185 4.93488L3.99571 5.92448ZM20.0014 5.94771L19.8981 6.94236L20.0014 5.94771ZM4.13957 6.91407C7.2449 6.46263 10.5043 4.32107 11.8665 3.34707L10.7033 1.72016C9.34125 2.69401 6.43101 4.55993 3.85185 4.93488L4.13957 6.91407ZM12.0263 3.36283C13.2904 4.41553 16.2531 6.56376 19.8981 6.94236L20.1047 4.95307C17.0617 4.637 14.4792 2.80286 13.3062 1.82598L12.0263 3.36283ZM2.01639 7.03767C2.21294 13.1797 4.15049 17.0467 6.30352 19.441C8.44234 21.8195 10.7223 22.6659 11.4991 22.8995L12.075 20.9843C11.5273 20.8196 9.61143 20.1285 7.79068 18.1037C5.98415 16.0947 4.19838 12.6928 4.01537 6.9737L2.01639 7.03767ZM12.5009 22.8995C13.2777 22.6659 15.5577 21.8195 17.6965 19.441C19.8495 17.0467 21.7871 13.1797 21.9836 7.03767L19.9846 6.9737C19.8016 12.6928 18.0158 16.0947 16.2093 18.1037C14.3886 20.1285 12.4727 20.8196 11.925 20.9843L12.5009 22.8995ZM9.29289 12.7071L11.2929 14.7071L12.7071 13.2929L10.7071 11.2929L9.29289 12.7071ZM12.8 14.6L15.8 10.6L14.2 9.4L11.2 13.4L12.8 14.6ZM11.8665 3.34707C11.88 3.33742 11.9032 3.32789 11.9373 3.32949C11.9723 3.33113 12.0038 3.34411 12.0263 3.36283L13.3062 1.82598C12.5782 1.21973 11.5015 1.1494 10.7033 1.72016L11.8665 3.34707ZM11.4991 22.8995C11.8271 22.9982 12.1729 22.9982 12.5009 22.8995L11.925 20.9843C11.9726 20.9699 12.0274 20.9699 12.075 20.9843L11.4991 22.8995ZM3.85185 4.93488C2.90078 5.07314 1.97944 5.88289 2.01639 7.03767L4.01537 6.9737C4.01551 6.97813 4.01436 6.98341 4.01336 6.98591C4.01284 6.9872 4.01497 6.98122 4.02483 6.97067C4.04742 6.9465 4.08932 6.92138 4.13957 6.91407L3.85185 4.93488ZM19.8981 6.94236C19.9349 6.94619 19.9651 6.96375 19.9809 6.98041C19.9877 6.98751 19.9883 6.99078 19.9872 6.98788C19.9856 6.98389 19.9845 6.978 19.9846 6.9737L21.9836 7.03767C22.0205 5.88511 21.0963 5.05606 20.1047 4.95307L19.8981 6.94236Z"
-                                                    fill="#1C61E7"></path>
-                                            </svg>
-                                            <div class="fw-bold ms-2 flex-fill">Authentic Product Guarantee</div>
-                                        </div>
+                                        <span>JANAN PLATINUM</span> <br>
+                                        <small>100ml</small>
                                     </div>
-                                    <a href="" class="mt-3">
-                                        More details
-                                    </a>
+                                    <div class="ms-auto">$160.00</div>
                                 </div>
-                                <div
-                                    class="d-flex justify-content-between align-items-center mt-3 align-content-center">
-                                    <div>
-                                        <div class="d-flex">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <path
-                                                    d="M4 22H20V20H4V22ZM22 20V5H20V20H22ZM2 5V20H4V5H2ZM4 5H20V3H4V5ZM4 5V3C2.89543 3 2 3.89543 2 5H4ZM22 5C22 3.89543 21.1046 3 20 3V5V5H22ZM20 22C21.1046 22 22 21.1046 22 20H20V22ZM4 20H2C2 21.1046 2.89543 22 4 22V20Z"
-                                                    fill="#1C61E7"></path>
-                                                <rect x="10" y="4" width="4" height="7" rx="1" fill="#1C61E7"></rect>
-                                            </svg>
-                                            <div class="fw-bold ms-2 flex-fill">Delivery Charge Free Over <br> 2500tk
-                                                Purchase</div>
-                                        </div>
+    
+                                <div class="input-group gap-3">
+                                    <input type="text" placeholder="Discount code" class="form-control shadow-none p-3">
+                                    <button class="btn primary-bg text-light p-3">
+                                        Apply
+                                    </button>
+                                </div>
+    
+                                <div class="text-muted fw-bold">
+                                    <div class="d-flex justify-content-between align-items-center pt-3">
+                                        <span>Subtotal</span>
+                                        <span>$160.00</span>
                                     </div>
-                                    <a href="" class="mt-3">
-                                        More details
-                                    </a>
+                                    <div class="d-flex justify-content-between align-items-center pt-3">
+                                        <span>Shipping</span>
+                                        <span>Enter shipping address</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center pt-3">
+                                        <h5>Total</h5>
+                                        <h5><small>USD</small> $160.00</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="border-top">
-                <div class="container">
-                    <div class="tab_container">
-                        <ul class="tabs">
-                            <li class="active">
-                                <a href="#description" class="text-uppercase fw-bold btn border-0">Description</a>
-                            </li>
-                            <li>
-                                <a href="#additional-info" class="text-uppercase fw-bold btn border-0">Additional
-                                    Information</a>
-                            </li>
-                            <li>
-                                <a href="#reviews" class="text-uppercase fw-bold btn border-0">Reviews (2)</a>
-                            </li>
-                            <li>
-                                <a href="#shipping" class="text-uppercase fw-bold btn border-0">Shipping & Delivery</a>
-                            </li>
-                        </ul>
-                        <div class="tab_content">
-                            <div id="description" class="tab_item active">
-                                <div class="flex-1 overflow-hidden">
-                                    <div class="react-scroll-to-bottom--css-prmtm-79elbk h-full dark:bg-gray-800">
-                                        <div class="react-scroll-to-bottom--css-prmtm-1n7m0yu">AXIS-Y Dark Spot
-                                            Correcting Glow Serum is a skincare product designed to address dark spots
-                                            and hyperpigmentation on the skin, promoting an even and glowing complexion.
-                                            It contains active ingredients like niacinamide and plant extracts to
-                                            brighten and improve the skin’s overall appearance.</div>
-                                    </div>
-                                </div>
-                                <p><strong>Key Benefits :</strong></p>
-                                <ul>
-                                    <li style="font-weight: 400"><span style="font-weight: 400"><strong>Lightening and
-                                                brightening the skin:</strong> The serum is formulated with ingredients
-                                            such as niacinamide, which is known for its ability to lighten and brighten
-                                            the skin, and reduce the appearance of dark spots and
-                                            hyperpigmentation.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400"><strong>Improving the
-                                                appearance of fine lines and wrinkles:</strong> The serum contains
-                                            ingredients such as adenosine, which is known to help improve the appearance
-                                            of fine lines and wrinkles by promoting collagen production.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400"><strong>Hydrating the
-                                                skin:</strong> The serum contains hyaluronic acid, which is known for
-                                            its ability to retain moisture in the skin, leaving it looking and feeling
-                                            hydrated and plump.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400"><strong>Enhancing the
-                                                overall radiance and glow of the skin:</strong> The serum is formulated
-                                            to enhance the overall radiance and glow of the skin, leaving it looking
-                                            bright and healthy.</span></li>
-                                </ul>
-                                <p><strong>Key Ingredients:</strong></p>
-                                <ul>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Niacinamide: Also known
-                                            as vitamin B3, niacinamide is said to help brighten the skin, reduce the
-                                            appearance of dark spots, and improve the overall appearance of the
-                                            skin.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Adenosine: Adenosine is
-                                            an organic compound and is known to help improve the appearance of fine
-                                            lines and wrinkles by promoting collagen production.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Hyaluronic acid: A
-                                            natural humectant that helps to attract and retain moisture in the skin,
-                                            hyaluronic acid is often used in skincare products to hydrate and plump the
-                                            skin.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Arbutin: Arbutin is a
-                                            naturally derived compound that can help to lighten and brighten the skin,
-                                            and reduce the appearance of dark spots and hyperpigmentation.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Centella Asiatica
-                                            Extract: Known for its soothing properties, Centella Asiatica extract helps
-                                            to calm irritated skin and reduce redness.</span></li>
-                                </ul>
-                                <p><strong>How to use:</strong></p>
-                                <ul>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Cleanse your face
-                                            thoroughly with a gentle cleanser.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Apply a small amount of
-                                            the serum to your fingertips and gently massage it into your skin.</span>
-                                    </li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Allow the serum to
-                                            absorb into your skin for a few minutes before applying any other skincare
-                                            products.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Use the serum once or
-                                            twice a day, as desired. It’s typically recommended to use it in the morning
-                                            and at night.</span></li>
-                                    <li style="font-weight: 400"><span style="font-weight: 400">Follow up with a
-                                            moisturizer, sun protection, and other skincare products as per your
-                                            routine.</span></li>
-                                </ul>
-                                <p><span style="font-weight: 400">It’s important to note that, it’s best to use the
-                                        product after toner and before moisturizer, also keep in mind to use sunscreen
-                                        during the day as the product may make your skin more sensitive to UV
-                                        rays.</span><span style="font-weight: 400">It’s also important to note that the
-                                        formulation of skincare products can change over time and it’s always best to
-                                        check the ingredients list before using the product. Additionally, as with any
-                                        skincare product, it’s always best to consult with a skincare professional or a
-                                        dermatologist before starting a new skincare routine, to ensure that the product
-                                        is suitable for your skin type and concerns.</span></p>
-                            </div>
-                            <div id="additional-info" class="tab_item">
-                                <div class="container">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ut. Suscipit error laudantium quidem veniam, odit provident in quasi harum? Aperiam natus delectus, id tempore quis odio sed dicta exercitationem ipsam voluptas veniam eaque quisquam ab reprehenderit velit aut distinctio vero ipsa odit quo deserunt hic repellendus perspiciatis. Corrupti optio dignissimos culpa possimus reprehenderit quibusdam commodi consequatur explicabo maxime. Ex quas, expedita aliquid rem sit dolor sequi earum quisquam maiores, et a necessitatibus incidunt ratione iure accusantium temporibus cupiditate, atque consequatur pariatur voluptate harum voluptatem. Sint eligendi iste quibusdam necessitatibus enim magnam eveniet maiores voluptatem aperiam. Nisi amet provident mollitia iusto minus aperiam cupiditate molestiae architecto, quod labore deleniti fugiat a sint magnam qui veritatis minima soluta quaerat incidunt repudiandae voluptatem delectus aut dolor. Consequatur debitis omnis quod ipsam in tenetur quae, voluptate iure, nisi neque repudiandae vitae quaerat eos officiis quibusdam velit. Velit delectus expedita enim, non commodi voluptates alias vitae maiores ipsum possimus! Praesentium accusamus, alias illo laboriosam facilis totam quas assumenda, laborum ut et amet esse vel culpa minima animi? Quis voluptatum ab officia at numquam, repellat consequatur fugiat, doloremque aspernatur magni eligendi unde maxime eum? Corporis esse quam odit, pariatur impedit magni quis labore aspernatur dolores. Temporibus quia asperiores maiores nisi corporis distinctio sapiente? Accusamus magni nobis hic. Temporibus porro voluptates aliquid eligendi nisi ut commodi tempora suscipit libero debitis architecto quaerat, cupiditate sunt magni saepe assumenda dolorem. Veniam recusandae eligendi possimus qui sunt voluptatum voluptates id consequatur vitae doloribus minus exercitationem aspernatur molestiae pariatur officia, quisquam aut earum accusantium libero excepturi ut. Dicta, labore. Officiis molestiae totam assumenda porro vel ullam dolores aspernatur sed, qui voluptatibus, illum est similique repudiandae minus a quibusdam incidunt itaque! Doloribus ipsam iusto obcaecati, nisi tempora velit accusantium sit temporibus at, optio dolore laboriosam praesentium deserunt ea corporis! Labore vel, sint a cumque nesciunt fugit unde modi error aperiam, odio iste eos quis et? Doloremque, possimus, quasi quod fugiat mollitia ullam, nostrum maxime ipsum sapiente facere ea aliquid? Blanditiis ea, hic ad eligendi at distinctio rerum quasi dicta molestiae, quod voluptates magni expedita deserunt enim itaque! Nisi hic omnis temporibus laudantium nesciunt expedita nihil possimus sit eveniet porro tenetur adipisci, quisquam id magnam voluptatem illum beatae, labore ea odit? Exercitationem quod, ipsa eaque a sequi modi eum velit magni soluta placeat iure quidem veritatis sit corrupti ut fuga, illo ipsam accusantium, amet dolor necessitatibus eligendi voluptatum. Suscipit distinctio veniam aspernatur sunt beatae est, rem perferendis blanditiis sapiente. Id ab quasi neque aliquid incidunt ut ducimus facilis ad blanditiis consectetur quod recusandae, aut illo distinctio tempora, iste deserunt accusantium mollitia. Aliquam similique quos soluta laudantium magni officia unde aperiam dolor. Porro, similique, nihil asperiores consectetur saepe error laboriosam commodi ad numquam laborum iste id accusantium ab molestiae quibusdam debitis dolore consequuntur aspernatur repudiandae natus harum nobis? Id, temporibus deleniti iste ab impedit aperiam aliquid officiis nobis eum? Minus cum nihil atque dolore expedita laboriosam eum similique qui obcaecati cumque a eveniet, est sapiente eaque voluptas ut amet soluta quas saepe autem.
-                                </div>
-                            </div>
-                            <div id="reviews" class="tab_item">
-                                <div class="row">
-                                    <div class="col-lg-6 col-12">
-                                        <div><strong>2 reviews for AXIS-Y Dark Spot Correcting Glow Serum - 50ml</strong></div>
-                                        <div class="reviews">
-                                            <div class="review_item d-flex align-items-center gap-3 my-3">
-                                                <div class="image">
-                                                    <img src="https://secure.gravatar.com/avatar/73f409e65c9de1b62fbc20de93b28c81?s=60&d=mm&r=g" alt="" width="60" class="rounded-circle">
-                                                </div>
-                                                <div class="review_content flex-fill">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <strong>Sontos</strong>
-                                                            <strong>–</strong>
-                                                            <span>June 1, 2024</span>
-                                                        </div>
-                                                        <div class="stars text-warning">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="font-14 mt-2">
-                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aliquid vel facilis quos 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="review_item d-flex align-items-center gap-3 my-3">
-                                                <div class="image">
-                                                    <img src="https://secure.gravatar.com/avatar/73f409e65c9de1b62fbc20de93b28c81?s=60&d=mm&r=g" alt="" width="60" class="rounded-circle">
-                                                </div>
-                                                <div class="review_content flex-fill">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <strong>Sontos</strong>
-                                                            <strong>–</strong>
-                                                            <span>June 1, 2024</span>
-                                                        </div>
-                                                        <div class="stars text-warning">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="font-14 mt-2">
-                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aliquid vel facilis quos 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12">
-                                        <div><strong>Add a review</strong></div>
-                                        <p>Your email address will not be published. Required fields are marked *</p>
-                                        
-                                        <div class="review-form">
-                                            <h3>Leave a Review</h3>
-                                            <form id="reviewForm">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <span>Your rating *:</span>
-                                                    <div class="star-rating">
-                                                        <span data-rating="1" class="star">&#9734;</span>
-                                                        <span data-rating="2" class="star">&#9734;</span>
-                                                        <span data-rating="3" class="star">&#9734;</span>
-                                                        <span data-rating="4" class="star">&#9734;</span>
-                                                        <span data-rating="5" class="star">&#9734;</span>
-                                                    </div>
-                                                </div>
-                                                <input type="hidden" name="rating" id="rating" value="0">
-                                                <div class="form-group mb-3">
-                                                    <label>
-                                                        <span class="mb-1">Your Name</span>
-                                                        <input type="text" class="form-control w-100 rounded-0 shadow-none" placeholder="Enter Your Name">
-                                                    </label>
-                                                </div>
-                                                <div class="form-group mb-3">
-                                                    <label>
-                                                        <span class="mb-1">Image</span>
-                                                        <input type="file" class="form-control w-100 rounded-0 shadow-none">
-                                                    </label>
-                                                </div>
-                                                <div class="form-group mb-3">
-                                                    <span class="mb-1">Your Review Text Here</span>
-                                                    <textarea name="review" class="form-control rounded-0 shadow-none" placeholder="Write your review here..." rows="4"></textarea>
-                                                </div>
-                                                <button type="submit" class="btn primary-bg mt-3 text-light">Submit Review</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="shipping" class="tab_item">
-                                <p>This is the shipping & delivery content.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </form>
+            </div>
         </main>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.tabs li a').on('click', function (e) {
-                e.preventDefault(); // Prevent default anchor behavior
 
-                // Remove active class from all tabs and tab items
-                $('.tabs li').removeClass('active');
-                $('.tab_item').removeClass('active');
-
-                // Add active class to clicked tab and corresponding content
-                $(this).parent('li').addClass('active');
-                const target = $(this).attr('href'); // Get the target ID from href
-                $(target).addClass('active');
-            });
-        });
-        $(document).ready(function () {
-        let selectedRating = 0;
-
-        // Hover effect
-        $('.star').on('mouseover', function () {
-            const rating = $(this).data('rating');
-            $('.star').each(function () {
-                $(this).toggleClass('hover', $(this).data('rating') <= rating);
-            });
-        }).on('mouseout', function () {
-            $('.star').removeClass('hover');
-        });
-
-        // Click to select rating
-        $('.star').on('click', function () {
-            selectedRating = $(this).data('rating');
-            $('#rating').val(selectedRating); // Set the hidden input value
-            $('.star').each(function () {
-                $(this).toggleClass('selected', $(this).data('rating') <= selectedRating);
-            });
-        });
-
-        // Form submission
-        $('#reviewForm').on('submit', function (e) {
-            e.preventDefault();
-            const rating = $('#rating').val();
-            const review = $(this).find('textarea[name="review"]').val();
-
-            if (rating == 0) {
-                alert('Please select a star rating.');
-                return;
-            }
-
-            // You can send the data to your backend here via AJAX
-            console.log('Rating:', rating);
-            console.log('Review:', review);
-            alert('Review submitted successfully!');
-        });
-    });
     </script>
 </body>
 
