@@ -151,3 +151,15 @@ function slider(){
       // Placeholder for any responsive adjustments needed
   });
 }
+$(document).ready(function () {
+  const nav = $('.fixed_nav');
+  const navOffset = nav.offset().top;
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() >= 10) {
+      nav.addClass('fixed');
+    } else {
+      nav.removeClass('fixed');
+    }
+  });
+});

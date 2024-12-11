@@ -36,6 +36,7 @@
     background-color: var(--primary);
     color: white;
 }
+
 .tab_container .tabs{
     list-style: none;
     display: flex;
@@ -96,4 +97,15 @@ textarea.form-control {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
+}
+@media (max-width: 769px){
+    .tab_container .tabs{
+        max-width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        text-wrap: nowrap;
+    }
+    .tab_container .tabs::-webkit-scrollbar{
+        height: 3px;
+    }
 }

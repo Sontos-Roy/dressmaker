@@ -257,8 +257,23 @@ header{
   z-index: 9999;
   background: white;
   position: fixed;
-  top: 0;
+  top: -75px;
   width: 100%;
   height: 75px;
   border-bottom: 1px solid #ddd;
+}
+.fixed_nav.fixed{
+  top: 0;
+}
+.fixed_nav .fixed_nav_menu{
+  display: none;
+}
+.fixed_nav .search_form{
+  display: block;
+}
+.fixed_nav.fixed .search_form{
+  display: none;
+}
+.fixed_nav.fixed .fixed_nav_menu{
+  display: block;
 }
