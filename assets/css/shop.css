@@ -21,6 +21,9 @@
         left: 0;
     }
 }
+.top_filter_box_sort{
+  transition: none;
+}
 .form-check:hover{
     border: 2px solid red;
 }
